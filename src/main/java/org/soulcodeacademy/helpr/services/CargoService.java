@@ -22,6 +22,14 @@ public class CargoService {
         return this.cargoRepository.findAll();
     }
 
+    public List<Cargo> listarPorNome(String nome){
+        return this.cargoRepository.findByNome(nome);
+    }
+
+    public List<Cargo> listarFaixaSalarial(Double valor1, Double valor2){
+        return this.cargoRepository.findBySalarioBetween(valor1, valor2);
+    }
+
     // Listar um pelo ID.
     public Cargo getCargo(Integer idCargo){
         // SELECT * FROM cargo WHERE idCargo = ?

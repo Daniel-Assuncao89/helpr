@@ -34,7 +34,7 @@ public class PopulateService {
         Cargo c3 = new Cargo(null, "Tecnico Geral", "Resolve os chamados urgentes", 12000.0);
 
         Funcionario f1 = new Funcionario(null, "Renato Pereira", "renato.pereira@gmail.com", "94292417024", "12345", null, c1);
-        Funcionario f2 = new Funcionario(null, "Victor Icoma", "victor.icoma@gmail.com", "46250532773", "12345", null, c1);
+        Funcionario f2 = new Funcionario(null, "Victor Icoma", "victor.icoma@gmail.com", "46250532773", "12345", null, c2);
 
         Cliente cliente1 = new Cliente(null, "Fernando Silva", "fernando.silva@gmail.com", "39823783209", "12345", "99-13456789");
         Cliente cliente2 = new Cliente(null, "Luiz Silva", "luiz.silva@gmail.com", "41181155819", "12345", "99-65748390");

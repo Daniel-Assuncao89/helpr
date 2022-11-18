@@ -30,6 +30,16 @@ public class CargoController {
         return cargoService.listar(); // JSON
     }
 
+    @GetMapping("/cargos/nome")
+    public List<Cargo> listarPorNome(@RequestParam String nome){
+        return this.cargoService.listarPorNome(nome);
+    }
+
+    @GetMapping("/cargos/salario")
+    public List<Cargo> listarPorFaixaSalarial(@RequestParam Double valor1, @RequestParam Double valor2){
+        return this.cargoService.listarFaixaSalarial(valor1, valor2);
+    }
+
     @GetMapping("/cargos/{idCargo}")
     public Cargo getCargo(@PathVariable Integer idCargo){
         // @PathVariable => extrai do endpoint o valor dinamico

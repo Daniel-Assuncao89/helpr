@@ -20,6 +20,16 @@ public class FuncionarioController {
         return funcionarioService.listar();
     }
 
+    @GetMapping("/funcionarios/salario")
+    public List<Funcionario> faixaSalarial(@RequestParam Double valor1, @RequestParam Double valor2){
+        return this.funcionarioService.listarPorFaixaSalarial(valor1, valor2);
+    }
+
+    @GetMapping("/funcionarios/cargo")
+    public List<Funcionario> listarPorCargo(@RequestParam Integer idCargo){
+        return this.funcionarioService.listarPorCargo(idCargo);
+    }
+
     @GetMapping("/funcionarios/{id}")
     public Funcionario getCFuncionario(@PathVariable Integer id) {
         return this.funcionarioService.getFuncionario(id);
