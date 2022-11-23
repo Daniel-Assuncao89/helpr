@@ -42,8 +42,8 @@ public class PopulateService {
         f1.setPerfil(Perfil.ADMIN);
         Funcionario f2 = new Funcionario(null, "Victor Icoma", "victor.icoma@gmail.com", "46250532773", passwordEncoder.encode("123456"), null, c2);
 
-        Cliente cliente1 = new Cliente(null, "Fernando Silva", "fernando.silva@gmail.com", "39823783209", "12345", "99-13456789");
-        Cliente cliente2 = new Cliente(null, "Luiz Silva", "luiz.silva@gmail.com", "41181155819", "12345", "99-65748390");
+        Cliente cliente1 = new Cliente(null, "Fernando Silva", "fernando.silva@gmail.com", "39823783209", passwordEncoder.encode("76589"), "99-13456789");
+        Cliente cliente2 = new Cliente(null, "Luiz Silva", "luiz.silva@gmail.com", "41181155819", passwordEncoder.encode("5346"), "99-65748390");
 
         Chamado chamado1 = new Chamado(null, "Primerio chamado", "Revisar entidades criadas");
         chamado1.setCliente(cliente1);
